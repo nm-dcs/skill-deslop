@@ -25,7 +25,7 @@ Click the green **Code** button at the top of this repo, then **Download ZIP**. 
 
 **Option 3: Releases**
 
-Go to the [Releases](https://github.com/stephenturner/skill-deslop/releases) page and download the latest `.skill` file. Add it to your Claude skills in [customize/skills](https://claude.ai/customize/skills) on the web, or double-click it if you have Claude Desktop installed.
+Go to the [Releases](https://github.com/nm-dcs/skill-deslop/releases) page and download the latest `.skill` file. Add it to your Claude skills in [customize/skills](https://claude.ai/customize/skills) on the web, or double-click it if you have Claude Desktop installed.
 
 **Option 4: Build it yourself**
 
@@ -65,17 +65,28 @@ The skill includes a 1-10 scoring rubric across five dimensions:
 
 Below 35/50: revise.
 
-## Skill structure
+## Repository structure
 
 ```
-deslop/
-├── SKILL.md              # Core rules, quick checks, scoring rubric
-├── README.md             # This file
-└── references/
-    ├── phrases.md        # Phrases to remove or replace
-    ├── structures.md     # Structural patterns to avoid
-    ├── tropes.md         # Full catalog of AI writing tropes
-    └── examples.md       # Before/after transformations
+skill-deslop/
+├── .claude-plugin/
+│   └── marketplace.json          # Claude Code marketplace catalog
+├── plugins/
+│   └── deslop/
+│       ├── .claude-plugin/
+│       │   └── plugin.json       # Plugin manifest
+│       └── skills/
+│           └── deslop/
+│               ├── SKILL.md      # Core rules, quick checks, scoring rubric
+│               └── references/
+│                   ├── phrases.md
+│                   ├── structures.md
+│                   ├── tropes.md
+│                   └── examples.md
+├── SKILL.md                      # Also at root for .skill zip builds
+├── references/                   # Also at root for .skill zip builds
+├── README.md
+└── LICENSE
 ```
 
 ## Acknowledgments
