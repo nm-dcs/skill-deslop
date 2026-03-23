@@ -1,0 +1,24 @@
+{
+  "name": "skill-deslop",
+  "owner": {
+    "name": "nm-dcs"
+  },
+  "metadata": {
+    "description": "Claude Code skills marketplace for removing AI writing patterns from prose"
+  },
+  "plugins": [
+    {
+      "name": "deslop",
+      "source": "./plugins/deslop",
+      "description": "Remove AI writing patterns from prose. Eliminates predictable AI tells, slop, and formulaic patterns across scientific writing, blog posts, and any prose.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Stephen Turner"
+      },
+      "homepage": "https://github.com/nm-dcs/skill-deslop",
+      "repository": "https://github.com/nm-dcs/skill-deslop",
+      "license": "MIT",
+      "keywords": ["writing", "editing", "ai-writing", "slop", "prose", "scientific-writing"]
+    }
+  ]
+}

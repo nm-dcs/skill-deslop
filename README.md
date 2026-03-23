@@ -10,20 +10,29 @@ The skill works across any prose context. Examples are weighted toward scientifi
 
 ## Installation
 
-**Option 1: Download ZIP**
+**Option 1: Claude Code marketplace (recommended)**
+
+Install directly from the GitHub repository using Claude Code's plugin marketplace:
+
+```sh
+/plugin marketplace add nm-dcs/skill-deslop
+/plugin install deslop@skill-deslop
+```
+
+**Option 2: Download ZIP**
 
 Click the green **Code** button at the top of this repo, then **Download ZIP**. Extract the ZIP and add the folder to your Claude skills directory.
 
-**Option 2: Releases**
+**Option 3: Releases**
 
 Go to the [Releases](https://github.com/stephenturner/skill-deslop/releases) page and download the latest `.skill` file. Add it to your Claude skills in [customize/skills](https://claude.ai/customize/skills) on the web, or double-click it if you have Claude Desktop installed.
 
-**Option 3: Build it yourself**
+**Option 4: Build it yourself**
 
 Build a `.skill` file from the source code, then add it to your Claude skills as described above.
 
 ```sh
-git clone https://github.com/stephenturner/skill-deslop.git
+git clone https://github.com/nm-dcs/skill-deslop.git
 cd skill-deslop
 zip -r deslop.skill SKILL.md references/
 ```
